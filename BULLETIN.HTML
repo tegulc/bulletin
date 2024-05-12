@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulletin</title>
+    <style type="text/css">
+        table, th {
+           
+            border: 1px solid black;
+            border-collapse: collapse;
+            min-width: 200px;
+            font-style: italic; background-color: rgb(70, 70, 65)
+        }
+        
+    </style>
+</head>
+<body>
+    <script language="javascript">
+        alert('veuillez remplir les differents champs de texte et cliquer sur calculer');
+        function  calcul(){
+            var a,b,c,d,e,f;
+            a=eval(document.f1.n1.value);
+            b=eval(document.f1.n2.value);
+            c=eval(document.f1.n3.value);
+            d=eval(document.f1.n4.value);
+            e=eval(document.f1.n5.value);
+            f=eval(document.f1.n6.value);
+            document.f1.res.value=(a*b+c*d+e*f)/(b+d+f);
+        }
+    </script>
+    <form name="f1">
+        <table>
+            <tr>
+                <th>Programmation Web</th>
+                <th>
+                    <input type="number" name="n1">
+                </th>
+                <th>coificient</th>
+                <th>
+                    <input type="number" name="n2">
+                </th>
+            </tr>
+            
+            <tr>
+                <th>Systeme d'Information</th>
+                <th>
+                    <input type="number" name="n3">
+                </th>
+                <th>coificient</th>
+                <th>
+                    <input type="number" name="n4">
+                </th>
+            </tr>
+            
+            <tr>
+                <th>Mathematique</th>
+                <th>
+                    <input type="number" name="n5">
+                </th>
+                <th>coificient</th>
+                <th>
+                    <input type="number" name="n6">
+                </th>
+            </tr>
+            <tr >
+                <th colspan="4">
+                    <input type="button" value="CALCULER" onclick="calcul()" />
+                </th>
+            </tr>
+            <tr>
+                <th >Moyenne obtenue</th>
+                <th colspan="3">
+                    <input type="number" name="res" readonly>
+                </th>
+            </tr>
+
+        </table>
+    </form>
+ 
+    <a href="2.HTML">mon chatton</a>
+</body>
+</html>
